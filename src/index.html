@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculadora de freelance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="main.css"
+    />
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+
+    <div class = container> 
+      <nav class = "titulos">
+        
+        <img src="/src/imagens/logob.png" alt = "logo do grupo de desenvolvimento he4rt"> 
+        <h1>HE4RT CHALLENGES</h1>
+        <h3>Calculadora freelance</h3>
+
+      </nav>
+    
+      <div class="info">
+        
+        <img src="/src/imagens/relogio.png" alt = "icone de relogio">
+        <h4>Horas trabalhas</h4>
+        <p>Tempo por dia que tirou para trabalhar no projeto</p>
+        <input class = "valor" type="number" min="0" max="24">
+
+      </div>
+
+      <div class="info">
+        
+        <img src="/src/imagens/calendario.png" alt = "icone de calendario">
+        <h4>Dias da semana</h4>
+        <p>Dias da semana que foram utilizados para trabalhar no projeto</p>
+        <input class = "valor" type="number" min="0" max="7">
+
+      </div>
+
+      <div class="info">
+      
+        <img src="/src/imagens/aviaocerto.png" alt="icone de avião">
+        <h4>Férias estipuladas</h4>
+        <p>Dias que tirou para poder ter férias no período estibulado de trabalho</p>
+        <input class = "valor" type="number" min="0">
+
+      </div>
+
+      <div class="info">
+        
+        <img src="/src/imagens/dinheiro.png" alt="icone de dinheiro">
+        <h4>Valor total do projeto</h4>
+        <p>&nbsp; &nbsp; Dinheiro total investido no projeto &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+        <label for="valor">R$</label>
+        <input class = "valor" type="number" step="1000" min="0">
+
+      </div>
+
+      <div class="resultado">
+
+        <h4>Calcule</h4>
+        <button class = "btn" onclick = "calculo()" style="border: none">Clique aqui</button>
+        <h4>Resultado</h4>
+        <div id = "resultante">
+          <h5 id = "valorFinal"></h5>        
+      </div>
+
+    </div>
+
+  </body>
+
+
+  </html>
